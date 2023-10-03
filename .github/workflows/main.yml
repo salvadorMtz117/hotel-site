@@ -18,14 +18,13 @@ jobs:
         run: npm install
       - name: Buld Website
         run: npm run build
-      - name: Deploy to S3
-        uses: stcalica/s3-upload@0.0.1
+      - uses: keithweaver/aws-s3-github-action@v1.0.0
+        name: Deploy to S3
         with:
-          # Bucket Name
-          bucket: hotelprojectbot21 
-          # Package to upload S3
-          package: ./dist/
-          # AWS Secret Key
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
-          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+          command: cp
+          source: ./dist/
+          destination: s3://hotelprojectbot21
+          aws_access_key_id: ${{ secrets.AWS_SECRET_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_region: ${{ secrets.AWS_REGION }}
+          flags: --recursive
