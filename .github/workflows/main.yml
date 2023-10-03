@@ -24,7 +24,7 @@ jobs:
           # Bucket Name
           bucket: hotelprojectbot21 
           # Package to upload S3
-          package: ./dist/hotel-site/.
+          package: dist/hotel-site
           # AWS Secret Key
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
