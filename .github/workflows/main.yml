@@ -18,13 +18,14 @@ jobs:
         run: npm install
       - name: Buld Website
         run: npm run build
-      - name: Set AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: Deploy to S3
+        uses: stcalica/s3-upload@0.0.1
         with:
-          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
-          AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          aws-region: us-east-1
-          AWS_BUCKET_NAME: hotelprojectbot21
-          DIST_LOCATION_CODE: ./dist
-      - name: Copy to S3
-        run: aws s3 sync ./dist/hotel-site/. s3://hotelprojectbot21
+          # Bucket Name
+          bucket: hotelprojectbot21 
+          # Package to upload S3
+          package: ./dist/hotel-site/.
+          # AWS Secret Key
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
+          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
