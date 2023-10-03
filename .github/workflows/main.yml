@@ -23,7 +23,7 @@ jobs:
         with:
           AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          AWS_DEFAULT_REGION: us-east-1
+          aws-region: us-east-1
           AWS_BUCKET_NAME: hotelprojectbot21
           DIST_LOCATION_CODE: ./dist
       - name: Copy to S3
