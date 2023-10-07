@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component'
 import { ContactComponent } from './contact/contact.component'
 import { GaleryComponent } from './galery/galery.component'
 import { RoomComponent } from './room/room.component'
+import { RestaurantComponent } from './restaurant/restaurant.component'
 
 const routes: Routes = [
     { path: 'inicio',component: PagesComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'gallery', component: GaleryComponent },
     { path: 'room', component: RoomComponent },
+    { path: 'restaurant', component: RestaurantComponent },
     { path: "**", redirectTo: "inicio" }
 ]
 

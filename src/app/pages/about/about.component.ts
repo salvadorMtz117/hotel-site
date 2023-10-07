@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { about } from 'src/app/data/about';
+import { AboutModel } from 'src/app/model/about.model';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class AboutComponent implements OnInit{
+  aboutData!: AboutModel;
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.aboutData = about;
   }
 
 }

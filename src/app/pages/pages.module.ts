@@ -14,6 +14,8 @@ import { OurrommComponent } from './content/ourromm/ourromm.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RoomComponent } from './room/room.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
+import { RestaurantMainComponent } from './content/restaurant-main/restaurant-main.component';
 
 // Módulos de contenido
 
@@ -27,9 +29,11 @@ import { RoomComponent } from './room/room.component';
     ContactusComponent,
     GaleryComponent,
     OurrommComponent,
+    RestaurantMainComponent,
     //AboutComponent,
     ContactComponent,
-    RoomComponent
+    RoomComponent,
+    RestaurantComponent
   ],
   imports: [
     CommonModule,

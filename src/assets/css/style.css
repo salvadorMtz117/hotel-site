@@ -600,11 +600,96 @@ button {
 /** end gallery  section **/
 
 
+.restaurant {
+  background-color: #f4f5f7;
+  padding: 60px 0 30px 0;
+  margin-top: 60px;
+}
+
+.restaurant .titlepage {
+  text-align: center;
+}
+
+.restaurant .titlepage h2 {
+  color: #121212;
+}
+
+.restaurant .titlepage p {
+  color: #121212;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.restaurant .restaurant_box {
+  text-align: left;
+  background-color: #fff;
+  margin-bottom: 30px;
+  transition: ease-in all 0.5s;
+}
+
+.restaurant .restaurant_box .restaurant_img {
+  overflow: hidden;
+}
+
+.restaurant .restaurant_box .restaurant_img figure {
+  margin: 0;
+}
+
+.restaurant .restaurant_box .restaurant_img figure img {
+  width: 100%;
+  transition: all .5s;
+}
+
+.restaurant .restaurant_box .restaurant_img figure img:hover {
+  transform: scale(1.2);
+}
+
+.restaurant .restaurant_box .restaurant_room {
+  padding: 33px 30px;
+  text-align: left;
+}
+
+.restaurant .restaurant_box .restaurant_room h3 {
+  color: #121212;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: ease-in all 0.5s;
+  margin: auto;
+}
+
+.restaurant .restaurant_box .restaurant_room h4 {
+color: #121212;
+font-size: 15px;
+line-height: 20px;
+font-weight: bold;
+padding-bottom: 10px;
+padding-top: 5px;
+transition: ease-in all 0.5s;
+margin: auto;
+}
+
+.restaurant .restaurant_box .restaurant_room span {
+  font-size: 15px;
+  color: #ff0909;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.restaurant .restaurant_box .restaurant_room p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
 /** blog section **/
 
 .blog {
-     background: url(../images/blog_bg.jpg);
-     background-repeat: no-repeat;
+     background: url(../images/restaurant_bg.jpg);
+     background-repeat: repeat;
      background-size: 100% 100%;
      padding: 60px 0 30px 0;
      margin-top: 60px;
@@ -661,6 +746,17 @@ button {
      padding-bottom: 5px;
      transition: ease-in all 0.5s;
      margin: auto;
+}
+
+.blog .blog_box .blog_room h4 {
+  color: #121212;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  transition: ease-in all 0.5s;
+  margin: auto;
 }
 
 .blog .blog_box .blog_room span {

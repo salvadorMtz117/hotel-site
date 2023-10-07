@@ -1,0 +1,31 @@
+      <!-- blog -->
+      <div  class="blog">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="titlepage">
+                    <h2>Restaurantes</h2>
+                    <p>Embárquese en un emocionante viaje culinario en el Singapore Marriott Tang Plaza Hotel. Descubra una amplia gama de opciones gastronómicas gourmet, que ofrecen cocina cantonesa y occidental galardonada, delicias internacionales excepcionales y sabrosos cócteles personalizados.</p>
+                 </div>
+              </div>
+           </div>
+           <div class="row" >
+              <div class="col-md-4" *ngFor="let rest of restaurantData">
+                 <div class="blog_box">
+                    <div class="blog_img">
+                       <figure><img src={{rest.image}} alt="#"/></figure>
+                    </div>
+                    <div class="blog_room">
+                       <h3>{{rest.name}}</h3>
+                       <span>{{rest.type}}</span>
+                       <p>{{rest.description}}</p>
+                       <h4>Abierto: {{rest.daysOpen}}</h4>
+                       <span>{{rest.schedule}}</span>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div style="text-align: center;"><a class="col-md-12 read_more" href="/restaurant"> Ver más </a></div>
+        </div>
+     </div>
+     <!-- end blog -->
