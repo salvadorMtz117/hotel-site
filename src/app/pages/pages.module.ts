@@ -11,6 +11,9 @@ import { BookingComponent } from './content/booking/booking.component';
 import { ContactusComponent } from './content/contactus/contactus.component';
 import { GaleryComponent } from './content/galery/galery.component';
 import { OurrommComponent } from './content/ourromm/ourromm.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { RoomComponent } from './room/room.component';
 
 // Módulos de contenido
 
@@ -23,7 +26,10 @@ import { OurrommComponent } from './content/ourromm/ourromm.component';
     BookingComponent,
     ContactusComponent,
     GaleryComponent,
-    OurrommComponent
+    OurrommComponent,
+    //AboutComponent,
+    ContactComponent,
+    RoomComponent
   ],
   imports: [
     CommonModule,

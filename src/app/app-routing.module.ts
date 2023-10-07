@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesRoutingModule } from './pages/pages.routing';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' }
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '**', redirectTo: '/inicio' }
 ];
 
 @NgModule({
